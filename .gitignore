@@ -39,3 +39,8 @@ examples/csharp/HelloPhi/models
 /src/java/build
 /src/java/CMakeFiles
 /src/java/CMakeCache.txt
+
+# David ignores
+david-tests
+examples/c/build_xcode
+examples/c/build_xcode_arm64

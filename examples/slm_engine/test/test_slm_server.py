@@ -77,7 +77,9 @@ def run_test(url: str):
 
     json_response = json.loads(response.text)
     print(f"Question: {json_response['question']}")
-    print(f"Answer: {json_response['choices'][0]['message']['content']}")
+    print(f"Full json dump: {json.dumps(json_response, indent=2)}")
+    # print(f"Answer: {json_response['choices'][0]['message']['content']}")
+    print(f"{GREEN}Answer: {json_response['response']['answer']}")
     print(f"{BLUE}KPI: {json_response['kpi']}{CLEAR}")
 
 
